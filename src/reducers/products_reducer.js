@@ -45,12 +45,12 @@ const products_reducer = (state, action) => {
     };
   }
 
-  tf(action.type === GET_PRODUCTS_ERROR){
+  if (action.type === GET_PRODUCTS_ERROR) {
     return {
       ...state,
       productsLoading: false,
       productsError: true,
-    }
+    };
   }
 
   // return state;
