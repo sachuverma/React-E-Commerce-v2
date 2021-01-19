@@ -40,6 +40,26 @@ const Filters = () => {
               onChange={updateFilters}
             />
           </div>
+          <div className="form-control">
+            <h5>category</h5>
+            <div>
+              {categories.map((c, index) => {
+                return (
+                  <button
+                    onClick={updateFilters}
+                    name="category"
+                    type="button"
+                    key={index}
+                    className={`${
+                      category === c.toLowerCase() ? "active" : null
+                    }`}
+                  >
+                    {c}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
         </form>
       </div>
     </Wrapper>
