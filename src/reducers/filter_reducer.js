@@ -11,10 +11,17 @@ import {
 
 const filter_reducer = (state, action) => {
   if (action.type === LOAD_PRODUCTS) {
+    let maxPrice = action.payload.map((product) => product.price);
+    maxPrice = Math.max(...maxPrice);
+
+    let minPrice = action.payload.map((product) => product.price);
+    minPrice = Math.min(...minPrice);
+
     return {
       ...state,
       allProducts: [...action.payload],
       filteredProducts: [...action.payload],
+      filters: { ...state.filters, maxPrice, minPrice },
     };
   }
 
@@ -43,27 +50,39 @@ const filter_reducer = (state, action) => {
     const { sort, filteredProducts } = state;
 
     let tempProducts = [...filteredProducts];
-    if (sort === "price-lowest") {
-      tempProducts = tempProducts.sort((a, b) => a.price - b.price);
-    }
 
     if (sort === "price-highest") {
       tempProducts = tempProducts.sort((a, b) => b.price - a.price);
-    }
-
-    if (sort === "name-a") {
+    } else if (sort === "name-a") {
       tempProducts = tempProducts.sort((a, b) => {
         return a.name.localeCompare(b.name);
       });
-    }
-
-    if (sort === "name-z") {
+    } else if (sort === "name-z") {
       tempProducts = tempProducts.sort((a, b) => {
         return b.name.localeCompare(a.name);
       });
+    } else {
+      tempProducts = tempProducts.sort((a, b) => a.price - b.price);
     }
 
     return { ...state, filteredProducts: tempProducts };
+  }
+
+  if (action.type === UPDATE_FILTERS) {
+    const { name, value } = action.payload;
+    return {
+      ...state,
+      filters: {
+        ...state.filters,
+        [name]: value,
+      },
+    };
+  }
+
+  if (action.type === FILTER_PRODUCTS) {
+    return {
+      ...state,
+    };
   }
 
   return state;
