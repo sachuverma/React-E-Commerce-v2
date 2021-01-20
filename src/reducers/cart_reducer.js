@@ -71,7 +71,7 @@ const cart_reducer = (state, action) => {
           };
         } else {
           let newAmount = item.amount - 1;
-          if (newAmount < 0) newAmount = 1;
+          if (newAmount < 1) newAmount = 1;
           return {
             ...item,
             amount: newAmount,
