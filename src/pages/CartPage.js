@@ -11,14 +11,19 @@ const CartPage = () => {
 
   if (cart.length < 1) {
     return (
-      <Wrapper className="page-100">
-        <div className="empty">
-          <h2>Your cart is empty...</h2>
-          <Link to="/products" className="btn">
-            continue shopping
-          </Link>
-        </div>
-      </Wrapper>
+      <main>
+        <PageHero title="cart" />
+        <Wrapper className="page">
+          <div className="empty">
+            <br />
+            <br />
+            <h2>Your Cart Is Empty :(</h2> <br />
+            <Link to="/products" className="btn">
+              continue shopping
+            </Link>
+          </div>
+        </Wrapper>
+      </main>
     );
   }
 
@@ -35,10 +40,6 @@ const CartPage = () => {
 const Wrapper = styled.main`
   .empty {
     text-align: center;
-    h2 {
-      margin-bottom: 1rem;
-      text-transform: none;
-    }
   }
 `;
 
