@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 import { formatPrice } from "../utils/helpers";
-import { products_url } from "../utils/constants";
+// import { products_url } from "../utils/constants";
 
 const ListView = ({ products }) => {
   return (
