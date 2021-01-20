@@ -9,6 +9,7 @@ import { formatPrice } from "../utils/helpers";
 
 const CartTotals = () => {
   const { totalAmount, shippingFee } = useCartContext();
+  const { myUser, loginWithRedirect } = useUserContext();
 
   return (
     <Wrapper>
@@ -25,9 +26,17 @@ const CartTotals = () => {
             order total :<span>{formatPrice(totalAmount + shippingFee)}</span>
           </h4>
         </article>
-        <Link to="/checkout" className="btn">
-          proceed to checkout
-        </Link>
+        {myUser ? (
+          <li>
+            <Link to="/checkout" className="btn">
+              proceed to checkout
+            </Link>
+          </li>
+        ) : (
+          <button type="button" onClick={loginWithRedirect} className="btn">
+            login to checkout
+          </button>
+        )}
       </div>
     </Wrapper>
   );
