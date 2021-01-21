@@ -63,6 +63,10 @@ export const FilterProvider = ({ children }) => {
     dispatch({ type: UPDATE_FILTERS, payload: { name, value } });
   };
 
+  const updateFilterFromScanner = (name, value) => {
+    dispatch({ type: "LOAD_PRODUCTS_FROM_SCANNER", payload: { name, value } });
+  };
+
   const clearFilters = () => {
     dispatch({ type: CLEAR_FILTERS });
   };
@@ -84,6 +88,7 @@ export const FilterProvider = ({ children }) => {
         setListView,
         updateSort,
         updateFilters,
+        updateFilterFromScanner,
         clearFilters,
       }}
     >

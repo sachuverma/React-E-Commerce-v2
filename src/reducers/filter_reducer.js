@@ -123,6 +123,17 @@ const filter_reducer = (state, action) => {
     };
   }
 
+  if (action.type === "LOAD_PRODUCTS_FROM_SCANNER") {
+    console.log(action.payload);
+    return {
+      ...state,
+      filters: {
+        ...state.filters,
+        text: action.payload.value.item,
+      },
+    };
+  }
+
   if (action.type === CLEAR_FILTERS) {
     return {
       ...state,

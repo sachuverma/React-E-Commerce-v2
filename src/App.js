@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-// import styled from "styled-components";
 
 import { Navbar, Sidebar, Footer } from "./components";
 import {
@@ -13,6 +12,8 @@ import {
   Products,
   PrivateRoute,
   AuthWrapper,
+  Scan,
+  ItemList,
 } from "./pages";
 
 function App() {
@@ -37,6 +38,11 @@ function App() {
 
           <Route exact path="/products">
             <Products />
+          </Route>
+
+          <Route exact path="/scan">
+            <Scan />
+            <ItemList />
           </Route>
 
           <Route exact path="/products/:id" children={<SingleProduct />} />

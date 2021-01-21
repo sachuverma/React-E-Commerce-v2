@@ -7,6 +7,8 @@ import Error from "./ErrorPage";
 import Checkout from "./CheckoutPage";
 import PrivateRoute from "./PrivateRoute";
 import AuthWrapper from "./AuthWrapper";
+import Scan from "../scanner/Scan";
+import ItemList from "../scanner/ItemList";
 
 export {
   Home,
@@ -18,4 +20,6 @@ export {
   Checkout,
   PrivateRoute,
   AuthWrapper,
+  Scan,
+  ItemList,
 };

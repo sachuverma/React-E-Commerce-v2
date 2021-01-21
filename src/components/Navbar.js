@@ -35,9 +35,14 @@ const Nav = () => {
             );
           })}
           {myUser && (
-            <li>
-              <Link to="/checkout">checkout</Link>
-            </li>
+            <>
+              <li>
+                <Link to="/checkout">checkout</Link>
+              </li>
+              <li>
+                <Link to="/scan">scan</Link>
+              </li>
+            </>
           )}
         </ul>
         <CartButtons />

@@ -19,11 +19,15 @@
     "react-scripts": "4.0.0",
     "stripe": "^8.130.0",
     "styled-components": "^5.2.1",
-    "web-vitals": "^0.2.4"
+    "web-vitals": "^0.2.4",
+    "@tensorflow-models/coco-ssd": "^2.1.0",
+    "@tensorflow/tfjs": "^2.4.0",
+    "fingerpose": "0.0.2",
+    "react-webcam": "^5.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "CI= react-scripts build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "netlify": "netlify dev"
