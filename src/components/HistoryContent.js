@@ -11,7 +11,7 @@ const HistoryContent = ({ history }) => {
   const {
     myUser: { name, email },
   } = useUserContext();
-  const itemCount = 0;
+  let itemCount = 0;
 
   return (
     <Wrapper className="section-center">
