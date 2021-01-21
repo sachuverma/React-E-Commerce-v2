@@ -15,6 +15,7 @@ import ProductList from "./ProductList";
 import Sort from "./Sort";
 import Stars from "./Stars";
 import CartContent from "./CartContent";
+import HistoryContent from "./HistoryContent";
 import PageHero from "./PageHero";
 import StripeCheckout from "./StripeCheckout";
 
@@ -36,6 +37,7 @@ export {
   Sort,
   Stars,
   CartContent,
+  HistoryContent,
   PageHero,
   StripeCheckout,
 };

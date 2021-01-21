@@ -13,6 +13,7 @@ import {
   PrivateRoute,
   AuthWrapper,
   Scan,
+  History,
   ItemList,
 } from "./pages";
 
@@ -40,10 +41,14 @@ function App() {
             <Products />
           </Route>
 
-          <Route exact path="/scan">
+          <PrivateRoute exact path="/history">
+            <History />
+          </PrivateRoute>
+
+          <PrivateRoute exact path="/scan">
             <Scan />
             <ItemList />
-          </Route>
+          </PrivateRoute>
 
           <Route exact path="/products/:id" children={<SingleProduct />} />
 

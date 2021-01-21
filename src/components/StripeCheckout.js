@@ -87,7 +87,7 @@ const CheckoutForm = () => {
       setSucceeded(true);
       setProcessing(false);
       setTimeout(() => {
-        clearCart();
+        clearCart(myUser.name + myUser.email);
         // eslint-disable-next-line no-restricted-globals
         history.push("/");
       }, 10000);

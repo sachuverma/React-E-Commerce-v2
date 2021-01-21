@@ -35,8 +35,8 @@ export const CartProvider = ({ children }) => {
     dispatch({ type: TOGGLE_CART_ITEM_AMOUNT, payload: { id, value } });
   };
 
-  const clearCart = () => {
-    dispatch({ type: CLEAR_CART });
+  const clearCart = (userId) => {
+    dispatch({ type: CLEAR_CART, payload: userId });
   };
 
   useEffect(() => {

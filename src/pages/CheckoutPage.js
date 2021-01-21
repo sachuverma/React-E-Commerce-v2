@@ -5,9 +5,11 @@ import styled from "styled-components";
 import { PageHero, StripeCheckout } from "../components";
 
 import { useCartContext } from "../context/cart_context";
+import { useUserContext } from "../context/user_context";
 
 const CheckoutPage = () => {
-  const { cart } = useCartContext();
+  const { cart, clearCart } = useCartContext();
+  const { myUser } = useUserContext();
 
   return (
     <main>
@@ -21,7 +23,9 @@ const CheckoutPage = () => {
             </Link>
           </div>
         ) : (
-          <StripeCheckout />
+          <>
+            <StripeCheckout />
+          </>
         )}
       </Wrapper>
     </main>

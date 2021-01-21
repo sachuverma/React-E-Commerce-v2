@@ -1,3 +1,6 @@
+import firebase from "../firebase";
+import { formatPrice } from "../utils/helpers";
+
 import {
   ADD_TO_CART,
   CLEAR_CART,
@@ -52,6 +55,27 @@ const cart_reducer = (state, action) => {
   }
 
   if (action.type === CLEAR_CART) {
+    const userId = action.payload;
+
+    if (userId) {
+      const tempCart = [...state.cart];
+      const totalPrice = formatPrice(state.totalAmount);
+      const shipping = formatPrice(state.shippingFee);
+      const boughtAt = new Date().toString();
+
+      // send this cart to firebase
+      const historyRef = firebase.database().ref("history");
+      const history = {
+        user: userId,
+        cart: tempCart,
+        boughtAt,
+        totalPrice,
+        shipping,
+      };
+
+      historyRef.push(history);
+    }
+
     return {
       ...state,
       cart: [],

@@ -8,6 +8,7 @@ import Checkout from "./CheckoutPage";
 import PrivateRoute from "./PrivateRoute";
 import AuthWrapper from "./AuthWrapper";
 import Scan from "../scanner/Scan";
+import History from "./HistoryPage";
 import ItemList from "../scanner/ItemList";
 
 export {
@@ -21,5 +22,6 @@ export {
   PrivateRoute,
   AuthWrapper,
   Scan,
+  History,
   ItemList,
 };

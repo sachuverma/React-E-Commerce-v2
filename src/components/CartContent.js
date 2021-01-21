@@ -23,7 +23,7 @@ const CartContent = () => {
         <Link to="/products" className="link-btn">
           continue shopping
         </Link>
-        <button onClick={clearCart} className="link-btn clear-btn">
+        <button onClick={() => clearCart(null)} className="link-btn clear-btn">
           clear cart
         </button>
       </div>
