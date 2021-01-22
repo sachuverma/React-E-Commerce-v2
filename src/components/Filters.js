@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import styled from "styled-components";
 import { FaCheck } from "react-icons/fa";
 
@@ -6,6 +6,8 @@ import { useFilterContext } from "../context/filter_context";
 import { getUniqueValues, formatPrice } from "../utils/helpers";
 
 const Filters = () => {
+  const refContainer = useRef(null);
+
   const {
     filters: {
       text,
@@ -26,12 +28,18 @@ const Filters = () => {
   const companies = getUniqueValues(allProducts, "company");
   const colors = getUniqueValues(allProducts, "colors");
 
+  useEffect(() => {
+    refContainer.current.focus();
+    window.scrollTo(0, refContainer.current.offsetTop);
+  });
+
   return (
     <Wrapper>
       <div className="content">
         <form onSubmit={(e) => e.preventDefault()}>
           <div className="form-control">
             <input
+              ref={refContainer}
               type="text"
               name="text"
               placeholder="search"

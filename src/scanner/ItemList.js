@@ -10,16 +10,16 @@ function ItemList() {
   const { detectedItems } = useGlobalContext();
   const { updateFilterFromScanner } = useFilterContext();
 
-  const data = [
-    "person1",
-    "person2",
-    "person3",
-    "person4",
-    "person5",
-    // "person6",
-  ];
-  let itemsSet = new Set(data);
-  // detectedItems.map((items) => itemsSet.add(items.class));
+  // const data = [
+  //   "person1",
+  //   "person2",
+  //   "person3",
+  //   "person4",
+  //   "person5",
+  //   // "person6",
+  // ];
+  let itemsSet = new Set();
+  detectedItems.map((items) => itemsSet.add(items.class));
   itemsSet = Array.from(itemsSet);
   itemsSet.sort();
   // console.log(itemsSet);
@@ -41,7 +41,7 @@ function ItemList() {
           return (
             <p key={index}>
               <Link
-                to="/products?scanner=true"
+                to="/products"
                 onClick={() => updateFilterFromScanner("text", { item })}
               >
                 <Card title={item} />
