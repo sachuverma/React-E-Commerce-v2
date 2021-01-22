@@ -1,5 +1,6 @@
 // Import dependencies
 import React, { useRef, useState, useEffect } from "react";
+import { PageHero } from "../components/index";
 import * as tf from "@tensorflow/tfjs";
 
 import * as cocossd from "@tensorflow-models/coco-ssd";
@@ -67,44 +68,43 @@ function Scan() {
   }, []);
 
   return (
-    <div className="Scan">
-      <header className="Scan-header">
-        <Webcam
-          ref={webcamRef}
-          muted={true}
-          style={{
-            position: "absolute",
-            marginLeft: "auto",
-            marginRight: "auto",
-            left: 0,
-            right: 0,
-            textAlign: "center",
-            zindex: 9,
-            width: 480,
-            height: 360,
-            maxWidth: "100%",
-            minHeight: "100%",
-          }}
-        />
+    <>
+      <PageHero title="object scanner" />
+      <div className="Scan">
+        <header className="Scan-header">
+          <Webcam
+            ref={webcamRef}
+            muted={true}
+            style={{
+              position: "absolute",
+              marginLeft: "auto",
+              marginRight: "auto",
+              left: 0,
+              right: 0,
+              textAlign: "center",
+              zindex: 9,
+              width: 640,
+              height: 480,
+            }}
+          />
 
-        <canvas
-          ref={canvasRef}
-          style={{
-            position: "absolute",
-            marginLeft: "auto",
-            marginRight: "auto",
-            left: 0,
-            right: 0,
-            textAlign: "center",
-            zindex: 8,
-            width: 480,
-            height: 360,
-            maxWidth: "100%",
-            minHeight: "100%",
-          }}
-        />
-      </header>
-    </div>
+          <canvas
+            ref={canvasRef}
+            style={{
+              position: "absolute",
+              marginLeft: "auto",
+              marginRight: "auto",
+              left: 0,
+              right: 0,
+              textAlign: "center",
+              zindex: 8,
+              width: 640,
+              height: 480,
+            }}
+          />
+        </header>
+      </div>
+    </>
   );
 }
 
