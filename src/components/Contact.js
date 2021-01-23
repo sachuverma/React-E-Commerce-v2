@@ -1,7 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
+import { useThemeContext } from "../context/theme_context";
+
 const Contact = () => {
+  const { theme, toggleTheme } = useThemeContext();
+
   return (
     <Wrapper>
       <div className="section-center">
@@ -29,6 +33,22 @@ const Contact = () => {
               subscribe
             </button>
           </form>
+        </div>
+        <div
+          className="section-center"
+          style={{
+            textAlign: "center",
+            alignItems: "center",
+            alignContent: "center",
+            marginTop: "50px",
+          }}
+        >
+          <h4>Toogle Theme</h4>
+          <span>
+            <button onClick={toggleTheme} className="btn">
+              {theme === "light-theme" ? "dark" : "light"}
+            </button>
+          </span>
         </div>
       </div>
     </Wrapper>
@@ -59,7 +79,6 @@ const Wrapper = styled.section`
   }
   .form-input {
     border-right: none;
-    color: var(--clr-grey-3);
     border-top-left-radius: var(--radius);
     border-bottom-left-radius: var(--radius);
   }

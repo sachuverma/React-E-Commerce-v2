@@ -59,6 +59,7 @@ const Wrapper = styled.section`
   align-items: center;
   margin-bottom: 2rem;
   column-gap: 2rem;
+  color: var(--font);
   @media (max-width: 576px) {
     display: grid;
     grid-template-columns: 1fr;
@@ -85,8 +86,8 @@ const Wrapper = styled.section`
     column-gap: 0.5rem;
     button {
       background: transparent;
-      border: 1px solid var(--clr-black);
-      color: var(--clr-black);
+      border: 1px solid var(--font);
+      color: var(--font);
       width: 1.5rem;
       border-radius: var(--radius);
       height: 1.5rem;
@@ -99,8 +100,8 @@ const Wrapper = styled.section`
       }
     }
     .active {
-      background: var(--clr-black);
-      color: var(--clr-white);
+      background: var(--clr-primary-6);
+      color: #fff;
     }
   }
 
@@ -109,10 +110,16 @@ const Wrapper = styled.section`
     font-size: 1rem;
     text-transform: capitalize;
     padding: 0.25rem 0.5rem;
+    background: var(--bcg);
+    color: var(--font);
   }
   label {
     font-size: 1rem;
     text-transform: capitalize;
+  }
+  input {
+    background: var(--bcg);
+    color: var(--font);
   }
 `;
 

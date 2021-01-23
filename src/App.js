@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+import { useThemeContext } from "./context/theme_context";
 
 import { Navbar, Sidebar, Footer } from "./components";
 import {
@@ -18,6 +20,18 @@ import {
 } from "./pages";
 
 function App() {
+  const { theme } = useThemeContext();
+
+  useEffect(() => {
+    if (theme === "dark-theme") {
+      // set dark mode theme
+      document.documentElement.className = "dark-theme";
+    } else {
+      // remove dark mode
+      document.documentElement.className = "light-theme";
+    }
+  }, [theme]);
+
   return (
     <AuthWrapper>
       <Router>

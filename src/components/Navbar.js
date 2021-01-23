@@ -7,10 +7,13 @@ import logo from "../assets/logo.svg";
 import { links } from "../utils/constants";
 import CartButtons from "./CartButtons";
 
+import { useThemeContext } from "../context/theme_context";
 import { useProductsContext } from "../context/products_context";
 import { useUserContext } from "../context/user_context";
 
 const Nav = () => {
+  const { theme } = useThemeContext();
+
   const { openSidebar } = useProductsContext();
   const { myUser } = useUserContext();
 
@@ -18,9 +21,16 @@ const Nav = () => {
     <NavContainer>
       <div className="nav-center">
         <div className="nav-header">
-          <Link to="/">
-            <img src={logo} alt="nav logo" />
-          </Link>
+          {theme === "light-theme" ? (
+            <Link to="/">
+              <img src={logo} alt="nav logo" />
+            </Link>
+          ) : (
+            <Link to="/" className="btn">
+              SACHUVERMA
+            </Link>
+          )}
+
           <button onClick={openSidebar} type="button" className="nav-toggle">
             <FaBars />
           </button>

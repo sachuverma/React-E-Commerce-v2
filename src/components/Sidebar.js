@@ -7,10 +7,12 @@ import logo from "../assets/logo.svg";
 import { links } from "../utils/constants";
 import CartButtons from "./CartButtons";
 
+import { useThemeContext } from "../context/theme_context";
 import { useProductsContext } from "../context/products_context";
 import { useUserContext } from "../context/user_context";
 
 const Sidebar = () => {
+  const { theme } = useThemeContext();
   const { isSidebarOpen, closeSidebar } = useProductsContext();
   const { myUser } = useUserContext();
 
@@ -20,7 +22,15 @@ const Sidebar = () => {
         className={`${isSidebarOpen ? "sidebar show-sidebar" : "sidebar"}`}
       >
         <div className="sidebar-header">
-          <img src={logo} alt="logo" className="logo" />
+          {theme === "light-theme" ? (
+            <Link to="/">
+              <img src={logo} alt="logo" />
+            </Link>
+          ) : (
+            <Link to="/" className="btn">
+              SACHUVERMA
+            </Link>
+          )}
           <button onClick={closeSidebar} className="close-btn" type="button">
             <FaTimes />
           </button>
@@ -102,7 +112,7 @@ const SidebarContainer = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--clr-white);
+    background: var(--bcg);
     transition: var(--transition);
     transform: translate(-100%);
     z-index: -1;

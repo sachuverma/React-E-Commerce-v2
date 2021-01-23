@@ -30,7 +30,6 @@ const Filters = () => {
 
   useEffect(() => {
     refContainer.current.focus();
-    window.scrollTo(0, refContainer.current.offsetTop);
   });
 
   return (
@@ -163,7 +162,7 @@ const Wrapper = styled.section`
   }
   .search-input {
     padding: 0.5rem;
-    background: var(--clr-grey-10);
+    background: var(--clr-primary-10);
     border-radius: var(--radius);
     border-color: transparent;
     letter-spacing: var(--spacing);
@@ -188,7 +187,7 @@ const Wrapper = styled.section`
     border-color: var(--clr-grey-5);
   }
   .company {
-    background: var(--clr-grey-10);
+    background: var(--clr-primary-10);
     border-radius: var(--radius);
     border-color: transparent;
     padding: 0.25rem;
