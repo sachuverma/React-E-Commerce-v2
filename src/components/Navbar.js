@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { FaBars } from "react-icons/fa";
 
 import logo from "../assets/logo.svg";
+import logoDark from "../assets/logo-dark.svg";
 import { links } from "../utils/constants";
 import CartButtons from "./CartButtons";
 
@@ -26,8 +27,8 @@ const Nav = () => {
               <img src={logo} alt="nav logo" />
             </Link>
           ) : (
-            <Link to="/" className="btn">
-              SACHUVERMA
+            <Link to="/">
+              <img src={logoDark} alt="nav logo" />
             </Link>
           )}
 
