@@ -107,6 +107,7 @@ body {
   color: var(--font);
   line-height: 1.5;
   font-size: 0.875rem;
+  transition: all 0.3s linear;
 }
 ul {
   list-style-type: none;
