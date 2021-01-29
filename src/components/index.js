@@ -18,6 +18,7 @@ import CartContent from "./CartContent";
 import HistoryContent from "./HistoryContent";
 import PageHero from "./PageHero";
 import StripeCheckout from "./StripeCheckout";
+import ThemeChange from "./ThemeChange";
 
 export {
   FeaturedProducts,
@@ -40,4 +41,5 @@ export {
   HistoryContent,
   PageHero,
   StripeCheckout,
+  ThemeChange,
 };

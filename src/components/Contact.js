@@ -1,11 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-import { useThemeContext } from "../context/theme_context";
+import { ThemeChange } from "./index";
 
 const Contact = () => {
-  const { theme, toggleTheme } = useThemeContext();
-
   return (
     <Wrapper>
       <div className="section-center">
@@ -42,14 +40,8 @@ const Contact = () => {
             alignContent: "center",
             marginTop: "50px",
           }}
-        >
-          <h4>Toogle Theme</h4>
-          <span>
-            <button onClick={toggleTheme} className="btn">
-              {theme === "light-theme" ? "dark" : "light"}
-            </button>
-          </span>
-        </div>
+        ></div>
+        <ThemeChange />
       </div>
     </Wrapper>
   );
@@ -114,7 +106,7 @@ const Wrapper = styled.section`
     }
   }
   @media (min-width: 1280px) {
-    padding: 15rem 0 7rem 0;
+    padding: 15rem 0 5rem 0;
   }
 `;
 

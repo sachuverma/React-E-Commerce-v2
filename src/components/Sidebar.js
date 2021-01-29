@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
 
 import logo from "../assets/logo.svg";
+import logoDark from "../assets/logo-dark.svg";
 import { links } from "../utils/constants";
 import CartButtons from "./CartButtons";
 
@@ -27,8 +28,8 @@ const Sidebar = () => {
               <img src={logo} alt="logo" />
             </Link>
           ) : (
-            <Link to="/" className="btn">
-              SACHUVERMA
+            <Link to="/">
+              <img src={logoDark} alt="logo" />
             </Link>
           )}
           <button onClick={closeSidebar} className="close-btn" type="button">
