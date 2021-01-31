@@ -2,6 +2,13 @@
   box-sizing: border-box;
 }
 
+details {
+  font-size: 1.2rem;
+}
+details summary {
+  font-size: 1.7rem;
+}
+
 .row-main {
   display: flex;
   flex-wrap: wrap;
