@@ -15,6 +15,9 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
+<link rel="stylesheet" type="text/css" media="all" href="markdown_styles.css" />
+
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -272,57 +275,3 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 [login-screenshot]: src/images/login.png
 [auth-screenshot]: src/images/auth.png
 
-<style>
-* {
-  box-sizing: border-box;
-}
-
-.row-main {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.column-main {
-  flex: 50%;
-  padding: 10px;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.column {
-  flex: 33%;
-  padding: 10px;
-}
-
-
-@media screen and (max-width: 600px) {
-  .column{
-    flex: 50%;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .row {
-    flex-direction: column;
-  }
-  .column-main {
-    flex: 100%;
-  }
-  .column{
-    flex: 100%;
-  }
-}
-
-img{
-  opacity: 0.6;
-  transition: all 0.3s linear;
-}
-img:hover{
-  opacity: 1;
-}
-
-
-</style>
