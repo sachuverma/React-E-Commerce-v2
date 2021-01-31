@@ -160,9 +160,12 @@ A list of commonly used resources that I find helpful are listed in the acknowle
 ## Built With
 
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-* [Laravel](https://laravel.com)
+* [node.js](https://getbootstrap.com)
+* [react.js](https://jquery.com)
+* [auth0](https://auth0.com)
+* [firebase](https://firebase.google.com/)
+* [tensorflow](https://www.tensorflow.org/js)
+* [stripe](https://stripe.com/en-in)
 
 
 <br />
@@ -170,34 +173,69 @@ This section should list any major frameworks that you built your project using.
 <!-- GETTING STARTED -->
 # Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
+This are steps on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
+<br />
 <br />
 
 ## Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
+You need to have `node.js` installed in your local machine   
+if not installed [visit node.js official website](https://nodejs.org/en/download/) and,  
+download the Node.js source code or a pre-built installer for your platform
+
+* update npm
   ```sh
   npm install npm@latest -g
   ```
+* create accounts with 
+  * [auth0](https://auth0.com)
+  * [firebase](https://firebase.google.com/)
+  * [stripe](https://stripe.com/en-in)
 <br />
 
-## Installation
+## Installation & Setup
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Getting APIs (steps may differ later time) 
+    - [auth0](https://manage.auth0.com/dashboard/us/github-users-auth/applications)
+      - Applications
+      - Create New Application
+      - Settings
+      - Client Id and Domain
+  
+    - [firebase](https://console.firebase.google.com/)
+      - Add New Project
+      - Project Overview
+      - Project Settings > Firebase SDK Snippet
+      - API Key
+  
+    - [stripe](https://dashboard.stripe.com/test/dashboard)
+      - Create New Account 
+      -  Overview 
+      -  Get Your API keys > Test API Keys
+      - Get Publishable and Secret Key 
+   
+2. Clone the repo ( git must be installed in your local machine )
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/sachuverma/React-E-Commerce-v2
    ```
 3. Install NPM packages
    ```sh
    npm install
    ```
-4. Enter your API in `config.js`
-   ```JS
-   const API_KEY = 'ENTER YOUR API';
+4. Start Server
+   ```sh
+   npm start
    ```
+5. Enter your API keys in `.env` file in root dir ( api id without '' )
+   ```JS
+    REACT_APP_AUTH_CLIENT_ID = 'ENTER_YOUR_API'
+    REACT_APP_AUTH_DOMAIN = 'ENTER_YOUR_API'
+    REACT_APP_FIREBASE_API = 'ENTER_YOUR_API'
+    REACT_APP_STRIPE_PUBLIC_KEY = 'ENTER_YOUR_API'
+    REACT_APP_AUTH_CLIENT_ID = 'ENTER_YOUR_API'
+   ```
+   
 <br />
 
 
@@ -245,9 +283,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 # Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Sachin Verma - [@sachuverma_](https://twitter.com/sachuverma_) - sachinverma53121@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/sachuverma/React-E-Commerce-v2](https://github.com/sachuverma/React-E-Commerce-v2)
 <br />
 
 
