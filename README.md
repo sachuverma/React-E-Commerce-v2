@@ -298,8 +298,6 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 }
 
 
-
-
 @media screen and (max-width: 600px) {
   .column{
     flex: 50%;
@@ -307,21 +305,14 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 }
 
 @media screen and (max-width: 500px) {
+  .row {
+    flex-direction: column;
+  }
   .column-main {
     flex: 100%;
   }
   .column{
     flex: 100%;
-  }
-}
-
-
-
-
-
-@media screen and (max-width: 600px) {
-  .row {
-    flex-direction: column;
   }
 }
 
