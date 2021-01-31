@@ -28,7 +28,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/sachuverma/React-E-Commerce">
-    <img src="./images/logo.png" alt="Logo" width="80" height="80">
+    <img src="./src/assets/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Best-README-Template</h3>
@@ -75,16 +75,69 @@
   </ol>
 </details>
 
+<br />
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+# About The Project
 
-### Screenshots
+## Screenshots
 
-<p align="center">
-  <img src="./src/images/user.png" alt="home page">
-</p>
+<h3 align="center">Home Page (light / dark theme)</h3>
+<div class="row-main">
+  <div class="column-main">
+    <img src="./src/assets/home.png" alt="light-theme" style="width:100%">
+  </div>
+
+  <div class="column-main">
+    <img src="./src/assets/home-dark.png" alt="dark-theme" style="width:100%">
+  </div>
+</div>
+
+<br />
+<h3 align="center">All Other Pages</h3>
+
+<div class="row">
+  <div class="column">
+    <img src="./src/assets/about.png" style="width:100%">
+  </div>
+
+  <div class="column">
+    <img src="./src/assets/auth.png" style="width:100%">
+  </div>
+  
+  <div class="column">
+    <img src="./src/assets/cart.png" style="width:100%">
+  </div>
+
+  <div class="column">
+    <img src="./src/assets/history.png" style="width:100%">
+  </div>
+
+  <div class="column">
+    <img src="./src/assets/products-grid.png" style="width:100%">
+  </div>
+
+  <div class="column">
+    <img src="./src/assets/products-list.png" style="width:100%">
+  </div>
+
+  <div class="column">
+    <img src="./src/assets/products-filter.png" style="width:100%">
+  </div>
+  
+  <div class="column">
+    <img src="./src/assets/product-page.png" style="width:100%">
+  </div>
+
+  <div class="column">
+    <img src="./src/assets/scanner.png" style="width:100%">
+  </div>
+
+  <div class="column">
+    <img src="./src/assets/scanner-products.png" style="width:100%">
+  </div>
+</div>
 
 There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
 
@@ -97,7 +150,7 @@ Of course, no one template will serve all projects since your needs may be diffe
 
 A list of commonly used resources that I find helpful are listed in the acknowledgements.
 
-### Built With
+## Built With
 
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 * [Bootstrap](https://getbootstrap.com)
@@ -107,12 +160,12 @@ This section should list any major frameworks that you built your project using.
 
 
 <!-- GETTING STARTED -->
-## Getting Started
+# Getting Started
 
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+## Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
 * npm
@@ -120,7 +173,7 @@ This is an example of how to list things you need to use the software and how to
   npm install npm@latest -g
   ```
 
-### Installation
+## Installation
 
 1. Get a free API Key at [https://example.com](https://example.com)
 2. Clone the repo
@@ -139,7 +192,7 @@ This is an example of how to list things you need to use the software and how to
 
 
 <!-- USAGE EXAMPLES -->
-## Usage
+# Usage
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
@@ -148,14 +201,14 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 
 <!-- ROADMAP -->
-## Roadmap
+# Roadmap
 
 See the [open issues](https://github.com/sachuverma/React-E-Commerce/issues) for a list of proposed features (and known issues).
 
 
 
 <!-- CONTRIBUTING -->
-## Contributing
+# Contributing
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
@@ -168,14 +221,14 @@ Contributions are what make the open source community such an amazing place to b
 
 
 <!-- LICENSE -->
-## License
+# License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
 
 
 <!-- CONTACT -->
-## Contact
+# Contact
 
 Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
 
@@ -184,7 +237,7 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 
 
 <!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
+# Acknowledgements
 * [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 * [Img Shields](https://shields.io)
 * [Choose an Open Source License](https://choosealicense.com)
@@ -218,3 +271,67 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 [product-screenshot]: src/images/user.png
 [login-screenshot]: src/images/login.png
 [auth-screenshot]: src/images/auth.png
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row-main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column-main {
+  flex: 50%;
+  padding: 10px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 33%;
+  padding: 10px;
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+  .column{
+    flex: 50%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .column-main {
+    flex: 100%;
+  }
+  .column{
+    flex: 100%;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+img{
+  opacity: 0.6;
+  transition: all 0.3s linear;
+}
+img:hover{
+  opacity: 1;
+}
+
+
+</style>
