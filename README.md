@@ -90,68 +90,26 @@
 ## Screenshots
 
 <h3 align="center">Home Page (light / dark theme)</h3>
-<ul>
-  <li>
-    <img src="./src/assets/home.png" alt="light-theme">
-  </li>
-  <li>
-    <img src="./src/assets/home-dark.png" alt="dark-theme" style="width:50%">
-  </li>
-</ul>
-
-
-<!-- <div class="row" align="center">
-  <div class="column-main">
-  </div>
-
-  <div class="column-main">
-  </div>
-</div> -->
+<p align="center">
+  <img src="./src/assets/home.png" alt="light-theme" style="width:50%">
+  <img src="./src/assets/home-dark.png" alt="dark-theme" style="width:50%">
+</p>
 
 <br />
+
 <h3 align="center">All Other Pages</h3>
-
-<div class="row" align="center">
-  <div class="column">
-    <img src="./src/assets/about.png" style="width:32%">
-  </div>
-
-  <div class="column">
-    <img src="./src/assets/auth.png" style="width:32%">
-  </div>
-  
-  <div class="column">
-    <img src="./src/assets/cart.png" style="width:32%">
-  </div>
-
-  <div class="column">
-    <img src="./src/assets/history.png" style="width:32%">
-  </div>
-
-  <div class="column">
-    <img src="./src/assets/products-grid.png" style="width:32%">
-  </div>
-
-  <div class="column">
-    <img src="./src/assets/products-list.png" style="width:32%">
-  </div>
-
-  <div class="column">
-    <img src="./src/assets/products-filter.png" style="width:32%">
-  </div>
-  
-  <div class="column">
-    <img src="./src/assets/product-page.png" style="width:32%">
-  </div>
-
-  <div class="column">
-    <img src="./src/assets/scanner.png" style="width:32%">
-  </div>
-
-  <div class="column">
-    <img src="./src/assets/scanner-products.png" style="width:32%">
-  </div>
-</div>
+<p align="center">
+  <img src="./src/assets/about.png" style="width:33%">
+  <img src="./src/assets/auth.png" style="width:33%">
+  <img src="./src/assets/cart.png" style="width:33%">
+  <img src="./src/assets/history.png" style="width:33%">
+  <img src="./src/assets/products-grid.png" style="width:33%">
+  <img src="./src/assets/products-list.png" style="width:33%">
+  <img src="./src/assets/products-filter.png" style="width:33%">
+  <img src="./src/assets/product-page.png" style="width:33%">
+  <img src="./src/assets/scanner.png" style="width:33%">
+  <img src="./src/assets/scanner-products.png" style="width:33%">
+</p>
 
 There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
 
