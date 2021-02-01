@@ -1,3 +1,5 @@
+<script src="./gallery.js"></script>
+
 <!--
 *** Thanks for checking out the Best-README-Template. If you have a suggestion
 *** that would make this better, please fork the repo and create a pull request
@@ -88,58 +90,66 @@
 ## Screenshots
 
 <h3 align="center">Home Page (light / dark theme)</h3>
-<div class="row" align="center">
+<ul>
+  <li>
+    <img src="./src/assets/home.png" alt="light-theme">
+  </li>
+  <li>
+    <img src="./src/assets/home-dark.png" alt="dark-theme" style="width:50%">
+  </li>
+</ul>
+
+
+<!-- <div class="row" align="center">
   <div class="column-main">
-    <img src="./src/assets/home.png" alt="light-theme" style="width:100%">
   </div>
 
   <div class="column-main">
-    <img src="./src/assets/home-dark.png" alt="dark-theme" style="width:100%">
   </div>
-</div>
+</div> -->
 
 <br />
 <h3 align="center">All Other Pages</h3>
 
 <div class="row" align="center">
   <div class="column">
-    <img src="./src/assets/about.png" style="width:100%">
+    <img src="./src/assets/about.png" style="width:32%">
   </div>
 
   <div class="column">
-    <img src="./src/assets/auth.png" style="width:100%">
+    <img src="./src/assets/auth.png" style="width:32%">
   </div>
   
   <div class="column">
-    <img src="./src/assets/cart.png" style="width:100%">
+    <img src="./src/assets/cart.png" style="width:32%">
   </div>
 
   <div class="column">
-    <img src="./src/assets/history.png" style="width:100%">
+    <img src="./src/assets/history.png" style="width:32%">
   </div>
 
   <div class="column">
-    <img src="./src/assets/products-grid.png" style="width:100%">
+    <img src="./src/assets/products-grid.png" style="width:32%">
   </div>
 
   <div class="column">
-    <img src="./src/assets/products-list.png" style="width:100%">
+    <img src="./src/assets/products-list.png" style="width:32%">
   </div>
 
   <div class="column">
-    <img src="./src/assets/products-filter.png" style="width:100%">
+    <img src="./src/assets/products-filter.png" style="width:32%">
   </div>
   
   <div class="column">
-    <img src="./src/assets/product-page.png" style="width:100%">
+    <img src="./src/assets/product-page.png" style="width:32%">
   </div>
 
   <div class="column">
-    <img src="./src/assets/scanner.png" style="width:100%">
+    <img src="./src/assets/scanner.png" style="width:32%">
   </div>
 
   <div class="column">
-    <img src="./src/assets/scanner-products.png" style="width:100%">
+    <img src="./src/assets/scanner-products.png" style="width:32%">
   </div>
 </div>
 
@@ -325,33 +335,6 @@ Project Link: [https://github.com/sachuverma/React-E-Commerce-v2](https://github
 [login-screenshot]: src/images/login.png
 [auth-screenshot]: src/images/auth.png
 
-<style>
-.column-main {
-  float: left;
-  width: 48%;
-  padding: 2px;
-}
-
-.column {
-  float: left;
-  width: 32%;
-  padding: 2px;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-
-@media screen and max-width(700px){
-  .column-main{
-    width: 98%;
-  }
-  .column{
-    width: 48%;
-  }
-}
-
-</style>
+<script>
+    md_gallery();
+</script>
