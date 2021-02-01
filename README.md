@@ -89,12 +89,13 @@
 
 ## Screenshots
 
-<h3 align="center">Home Page (light / dark theme)</h3>
+<!-- <h3 align="center">Home Page (light / dark theme)</h3>
 <p align="center">
-  <img src="./src/assets/home.png" alt="light-theme" style="width:50%">
-  <img src="./src/assets/home-dark.png" alt="dark-theme" style="width:50%">
-</p>
+  <img src="./src/assets/home.png" alt="light-theme" width=48%>
+  <img src="./src/assets/home-dark.png" alt="dark-theme" width=48%>
+</p> -->
 
+<!-- 
 <br />
 
 <h3 align="center">All Other Pages</h3>
@@ -109,7 +110,7 @@
   <img src="./src/assets/product-page.png" style="width:33%">
   <img src="./src/assets/scanner.png" style="width:33%">
   <img src="./src/assets/scanner-products.png" style="width:33%">
-</p>
+</p> -->
 
 There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
 
