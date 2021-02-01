@@ -89,16 +89,18 @@
 
 ## Screenshots
 
-<!-- <h3 align="center">Home Page (light / dark theme)</h3>
+<h3 align="center">Home Page (light / dark theme)</h3>
+<!-- 
 <p align="center">
   <img src="./src/assets/home.png" alt="light-theme" width=48%>
   <img src="./src/assets/home-dark.png" alt="dark-theme" width=48%>
 </p> -->
 
-<!-- 
 <br />
 
 <h3 align="center">All Other Pages</h3>
+
+<!-- 
 <p align="center">
   <img src="./src/assets/about.png" style="width:33%">
   <img src="./src/assets/auth.png" style="width:33%">
