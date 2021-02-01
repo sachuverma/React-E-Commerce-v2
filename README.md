@@ -15,7 +15,6 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-<link rel="stylesheet" type="text/css" media="all" href="markdown_styles.css" />
 
 
 [![Contributors][contributors-shield]][contributors-url]
@@ -89,7 +88,7 @@
 ## Screenshots
 
 <h3 align="center">Home Page (light / dark theme)</h3>
-<div class="row-main">
+<div class="row" align="center">
   <div class="column-main">
     <img src="./src/assets/home.png" alt="light-theme" style="width:100%">
   </div>
@@ -102,7 +101,7 @@
 <br />
 <h3 align="center">All Other Pages</h3>
 
-<div class="row">
+<div class="row" align="center">
   <div class="column">
     <img src="./src/assets/about.png" style="width:100%">
   </div>
@@ -326,3 +325,33 @@ Project Link: [https://github.com/sachuverma/React-E-Commerce-v2](https://github
 [login-screenshot]: src/images/login.png
 [auth-screenshot]: src/images/auth.png
 
+<style>
+.column-main {
+  float: left;
+  width: 48%;
+  padding: 2px;
+}
+
+.column {
+  float: left;
+  width: 32%;
+  padding: 2px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+@media screen and max-width(700px){
+  .column-main{
+    width: 98%;
+  }
+  .column{
+    width: 48%;
+  }
+}
+
+</style>
