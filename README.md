@@ -1,4 +1,3 @@
-<script src="./gallery.js"></script>
 
 <!--
 *** Thanks for checking out the Best-README-Template. If you have a suggestion
@@ -295,7 +294,3 @@ Project Link: [https://github.com/sachuverma/React-E-Commerce-v2](https://github
 [product-screenshot]: src/images/user.png
 [login-screenshot]: src/images/login.png
 [auth-screenshot]: src/images/auth.png
-
-<script>
-    md_gallery();
-</script>
