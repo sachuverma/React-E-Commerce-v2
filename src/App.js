@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import { useThemeContext } from "./context/theme_context";
+import useAlan from "./hooks/useAlan";
 
 import { Navbar, Sidebar, Footer } from "./components";
 import {
@@ -21,6 +22,8 @@ import {
 
 function App() {
   const { theme } = useThemeContext();
+
+  useAlan();
 
   useEffect(() => {
     if (theme === "dark-theme") {
