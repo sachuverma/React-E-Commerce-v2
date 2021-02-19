@@ -37,48 +37,46 @@ function App() {
 
   return (
     <AuthWrapper>
-      <Router>
-        <Navbar />
-        <Sidebar />
+      <Navbar />
+      <Sidebar />
 
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
 
-          <Route exact path="/about">
-            <About />
-          </Route>
+        <Route exact path="/about">
+          <About />
+        </Route>
 
-          <Route exact path="/cart">
-            <Cart />
-          </Route>
+        <Route exact path="/cart">
+          <Cart />
+        </Route>
 
-          <Route exact path="/products">
-            <Products />
-          </Route>
+        <Route exact path="/products">
+          <Products />
+        </Route>
 
-          <PrivateRoute exact path="/history">
-            <History />
-          </PrivateRoute>
+        <PrivateRoute exact path="/history">
+          <History />
+        </PrivateRoute>
 
-          <PrivateRoute exact path="/scan">
-            <Scan />
-            <ItemList />
-          </PrivateRoute>
+        <PrivateRoute exact path="/scan">
+          <Scan />
+          <ItemList />
+        </PrivateRoute>
 
-          <Route exact path="/products/:id" children={<SingleProduct />} />
+        <Route exact path="/products/:id" children={<SingleProduct />} />
 
-          <PrivateRoute exact path="/checkout">
-            <Checkout />
-          </PrivateRoute>
+        <PrivateRoute exact path="/checkout">
+          <Checkout />
+        </PrivateRoute>
 
-          <Route path="*">
-            <Error />
-          </Route>
-        </Switch>
-        <Footer />
-      </Router>
+        <Route path="*">
+          <Error />
+        </Route>
+      </Switch>
+      <Footer />
     </AuthWrapper>
   );
 }
