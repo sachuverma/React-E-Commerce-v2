@@ -51,5 +51,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://sachu-ecommerce-api.herokuapp.com/"
+  "proxy": "https://sachu-ecommerce-store-api.herokuapp.com/"
 }

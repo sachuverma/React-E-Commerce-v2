@@ -42,6 +42,6 @@ export const services = [
   },
 ]
 
-export const products_url = 'https://sachu-ecommerce-api.herokuapp.com/api/products'
+export const products_url = 'https://sachu-ecommerce-store-api.herokuapp.com/api/products'
 
-export const single_product_url = `https://sachu-ecommerce-api.herokuapp.com/api/products/`
+export const single_product_url = `https://sachu-ecommerce-store-api.herokuapp.com/api/products/`

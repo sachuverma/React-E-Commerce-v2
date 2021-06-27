@@ -30,7 +30,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/sachuverma/React-E-Commerce">
+  <a href="https://github.com/sachuverma/React-E-Commerce-v2">
     <img src="./src/assets/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -39,14 +39,14 @@
   <p align="center">
     An awesome e-commerce web app project using React.js and Tensorflow!
     <br />
-    <a href="https://github.com/sachuverma/React-E-Commerce"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/sachuverma/React-E-Commerce-v2"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/sachuverma/React-E-Commerce">View Demo</a>
+    <a href="https://github.com/sachuverma/React-E-Commerce-v2">View Demo</a>
     ·
-    <a href="https://github.com/sachuverma/React-E-Commerce/issues">Report Bug</a>
+    <a href="https://github.com/sachuverma/React-E-Commerce-v2/issues">Report Bug</a>
     ·
-    <a href="https://github.com/sachuverma/React-E-Commerce/issues">Request Feature</a>
+    <a href="https://github.com/sachuverma/React-E-Commerce-v2/issues">Request Feature</a>
   </p>
 </p>
 
@@ -186,7 +186,7 @@ download the Node.js source code or a pre-built installer for your platform
    
 2. Clone the repo ( git must be installed in your local machine )
    ```sh
-   git clone https://github.com/sachuverma/React-E-Commerce-v2
+   git clone https://github.com/sachuverma/React-E-Commerce-v2-v2
    ```
 3. Install NPM packages
    ```sh
@@ -222,7 +222,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 # Roadmap
 
-See the [open issues](https://github.com/sachuverma/React-E-Commerce/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/sachuverma/React-E-Commerce-v2/issues) for a list of proposed features (and known issues).
 <br />
 
 
@@ -254,7 +254,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Sachin Verma - [@sachuverma_](https://twitter.com/sachuverma_) - sachinverma53121@gmail.com
 
-Project Link: [https://github.com/sachuverma/React-E-Commerce-v2](https://github.com/sachuverma/React-E-Commerce-v2)
+Project Link: [https://github.com/sachuverma/React-E-Commerce-v2-v2](https://github.com/sachuverma/React-E-Commerce-v2-v2)
 <br />
  
 
@@ -279,16 +279,16 @@ Project Link: [https://github.com/sachuverma/React-E-Commerce-v2](https://github
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/sachuverma/React-E-Commerce.svg?style=for-the-badge
-[contributors-url]: https://github.com/sachuverma/React-E-Commerce/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/sachuverma/React-E-Commerce.svg?style=for-the-badge
-[forks-url]: https://github.com/sachuverma/React-E-Commerce/network/members
-[stars-shield]: https://img.shields.io/github/stars/sachuverma/React-E-Commerce.svg?style=for-the-badge
-[stars-url]: https://github.com/sachuverma/React-E-Commerce/stargazers
-[issues-shield]: https://img.shields.io/github/issues/sachuverma/React-E-Commerce.svg?style=for-the-badge
-[issues-url]: https://github.com/sachuverma/React-E-Commerce/issues
-[license-shield]: https://img.shields.io/github/license/sachuverma/React-E-Commerce.svg?style=for-the-badge
-[license-url]: https://github.com/sachuverma/React-E-Commerce/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/sachuverma/React-E-Commerce-v2.svg?style=for-the-badge
+[contributors-url]: https://github.com/sachuverma/React-E-Commerce-v2/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/sachuverma/React-E-Commerce-v2.svg?style=for-the-badge
+[forks-url]: https://github.com/sachuverma/React-E-Commerce-v2/network/members
+[stars-shield]: https://img.shields.io/github/stars/sachuverma/React-E-Commerce-v2.svg?style=for-the-badge
+[stars-url]: https://github.com/sachuverma/React-E-Commerce-v2/stargazers
+[issues-shield]: https://img.shields.io/github/issues/sachuverma/React-E-Commerce-v2.svg?style=for-the-badge
+[issues-url]: https://github.com/sachuverma/React-E-Commerce-v2/issues
+[license-shield]: https://img.shields.io/github/license/sachuverma/React-E-Commerce-v2.svg?style=for-the-badge
+[license-url]: https://github.com/sachuverma/React-E-Commerce-v2/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/sachuverma
 [product-screenshot]: src/images/user.png
