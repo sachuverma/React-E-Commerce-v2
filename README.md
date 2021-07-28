@@ -89,15 +89,25 @@
 ## Screenshots
 
 <h3 align="center">Home Page (light / dark theme)</h3>
-<!-- 
-<p align="center">
-  <img src="./src/assets/home.png" alt="light-theme" width=48%>
-  <img src="./src/assets/home-dark.png" alt="dark-theme" width=48%>
-</p> -->
+
+
+<img src="./demo/home.gif" alt="light-theme">
 
 <br />
+<h3 align="center">Voice Navigation</h3>
+<img src="./demo/voice.gif" alt="light-theme">
 
-<h3 align="center">All Other Pages</h3>
+<br />
+<h3 align="center">Object Detection and Searching Similar Products</h3>
+<img src="./demo/scan.png" alt="light-theme">
+<img src="./demo/scan2.png" alt="light-theme">
+
+
+<br />
+<h3 align="center">Cart and Payment Integration</h3>
+<img src="./demo/cart.png" alt="light-theme">
+<img src="./demo/pay.png" alt="light-theme">
+<img src="./demo/pay2.png" alt="light-theme">
 
 <!-- 
 <p align="center">
@@ -113,22 +123,13 @@
   <img src="./src/assets/scanner-products.png" style="width:33%">
 </p> -->
 
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should element DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have have contributed to expanding this template!
-
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
 <br />
 
 
 ## Built With
 
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+Major frameworks, technologies, tools used:
 * [node.js](https://getbootstrap.com)
 * [react.js](https://jquery.com)
 * [auth0](https://auth0.com)
