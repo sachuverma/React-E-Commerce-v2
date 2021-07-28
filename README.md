@@ -98,16 +98,16 @@
 <img src="./demo/voice.gif" alt="light-theme">
 
 <br />
-<h3 align="center">Object Detection and Searching Similar Products</h3>
+<!-- <h3 align="center">Object Detection and Searching Similar Products</h3>
 <img src="./demo/scan.png" alt="light-theme">
-<img src="./demo/scan2.png" alt="light-theme">
+<img src="./demo/scan2.png" alt="light-theme"> -->
 
 
-<br />
+<!-- <br />
 <h3 align="center">Cart and Payment Integration</h3>
 <img src="./demo/cart.png" alt="light-theme">
 <img src="./demo/pay.png" alt="light-theme">
-<img src="./demo/pay2.png" alt="light-theme">
+<img src="./demo/pay2.png" alt="light-theme"> -->
 
 <!-- 
 <p align="center">
